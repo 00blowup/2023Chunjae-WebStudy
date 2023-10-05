@@ -1,0 +1,63 @@
+<!--form과 table을 결합하여 깔끔하게 정렬된 회원가입 form 제작 (onclick에 JS 함수 사용)-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table>
+            <caption>회원가입</caption>
+            <tr>
+                <td>
+                    <label>아이디</label>
+                </td>
+                <td>
+                    <input type="text" name="userid" size="20" id="userid">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>패스워드</label>
+                </td>
+                <td>
+                    <input type="password" name="userpw" size="20" id="userpw">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>성별</label>
+                </td>
+                <td>
+                    <input type="radio" id="male" name="sex" value="male">
+                    <label for="male">남성</label>
+                    <input type="radio" id="female" name="sex" value="female">
+                    <label for="female">여성</label>
+                </td>
+            </tr>
+            <tr>
+               <td>
+                    <label>전화번호</label>
+               </td>
+               <td>
+                <input type="tel" id="phone1" name="phone1" size="3">
+                <span>-</span>
+                <input type="tel" id="phone2" name="phone2" size="4">
+                <span>-</span>
+                <input type="tel" id="phone3" name="phone3" size="4">
+            </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                    <input type="button" value="확인" onclick=Validate()>
+                    <input type="reset" value="취소">
+                </td>
+            </tr>
+
+
+    </table>
+    </form>
+</body>
+</html>
