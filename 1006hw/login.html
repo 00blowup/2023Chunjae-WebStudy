@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <div id="body_box" class="container_column"> <!--전체를 감싸는 박스-->
+        <header id="logo_container" class="container_column">  <!--로고 컨테이너-->
+            <span id="logo">Babies</span>  <!--사이트명-->
+            <span id="catchphrase">Follow your childhood dreams!</span>
+        </header>
+
+        <div id="login_container" class="container_column">   <!--로그인 박스-->
+            <form class="container_column" action="join" method="post" name="frmLogin">
+                <input type="text" name="userid" size="20" id="userid" placeholder="아이디를 입력하세요" >
+                <input type="password" name="userpw" size="20" id="userpw" placeholder="비밀번호를 입력하세요" >
+                <input type="submit" class="button" value="로그인">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

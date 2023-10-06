@@ -1,0 +1,83 @@
+#logo {
+    font-weight: 600;
+    font-size: 50px;
+    font-style: italic;
+    color: #216ac4;
+    font-family: Georgia, serif;
+}
+
+#body_box {
+    width: 100%;
+    height: 100%;
+}
+
+#logo_container {
+    height: 150px;
+}
+
+#login_container {
+    background-color:rgb(213, 255, 255);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    width: 100%;
+    height: 300px;
+}
+
+#catchphrase {
+    font-family: Georgia, serif;
+}
+
+#userid {
+    font-size: 15px;
+}
+
+#userpw {
+    font-size: 15px;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_column {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    margin-top: 40px;
+    width: 200px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 800;
+    font-size: large;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: none;
+    border-radius: 20px;
+    background-color: #216ac4;
+  }
+  
+.button:hover {
+    background-color: #001e44;
+    color: white;
+}
+
+input {
+    margin: 10px;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+form {
+    width: 50%;
+}
