@@ -1,0 +1,56 @@
+<!--각종 선택자를 테스트해보는 코드-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* span 이후에 *이 있더라도, span이 우선! */
+        span {
+            color: blue;
+        }
+        * {
+            color: red;
+        }
+
+        /* ::before 테스트 */
+        p::before {
+            content : '♥';
+            color: pink;
+        }
+
+        /* nth-child 테스트 */
+        ol li {
+            color: black;
+        }
+        ol li:nth-child(odd) {
+            background-color: cornsilk;
+        }
+        ol li:nth-child(even){
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>전체 선택자 : 빨강</h1>
+    <p>전체 선택자 *은 모든 요소를 한 번에 선택할 수 있습니다.</p>
+    <span>태그 선택자는 순서에 상관없이 전체 선택자보다 우선합니다.</span> <br>
+    <span>전체 선택자 스타일에 !important를 붙이면 다시 전체 선택자가 태그 선택자보다 우선합니다.</span>
+
+    <p>::before 테스트</p>
+    <p>::before 테스트</p>
+    <p>::before 테스트</p>
+
+    <ol>
+        <li>nth-child 테스트</li>
+        <li>nth-child 테스트</li>
+        <li>nth-child 테스트</li>
+        <li>nth-child 테스트</li>
+        <li>nth-child 테스트</li>
+        <li>nth-child 테스트</li>
+        <li>nth-child 테스트</li>
+        <li>nth-child 테스트</li>
+    </ol>
+</body>
+</html>
