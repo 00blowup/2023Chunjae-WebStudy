@@ -1,0 +1,32 @@
+<!--css에서 폰트 사이즈 기준 상대적 크기 단위(em, rem)를 사용해보는 코드-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grandparent {
+            font-size: 2em;
+        }
+        #parent {
+            font-size: 2rem;
+        }
+        #child {
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    나는 html 기본 폰트 사이즈입니다
+    <div id="grandparent">
+        나는 할아버지입니다
+        <div id="parent">
+            나는 아버지입니다
+            <div id="child">
+                나는 자식입니다
+            </div>
+        </div>
+    </div>
+</body>
+</html>
