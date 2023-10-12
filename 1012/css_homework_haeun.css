@@ -88,10 +88,10 @@ h1,h2,h3,h4,h5,h6,p{color: #999999} /* color hex 코드를 사용하여 글자 �
     color:#666666;  /* color hex 코드를 사용하여 글자 색을 설정하였음. */
 }
 
-/* 'class가 table인 요소의 자식 및 자손인 tr 태그'의 자손인 th 태그에 적용되는 코드 */
+/* 'class가 table인 요소의 자식 및 자손인 tr 태그'의 자식인 th 태그에 적용되는 코드 */
 .table tr>th{padding:5px 0} /* 상하의 border 안쪽 여백을 5px, 좌우의 border 안쪽 여백을 0으로 설정하였음. */
 
-/* 'class가 table인 요소의 자식 및 자손인 tr 태그'의 자손인 td 태그에 적용되는 코드 */
+/* 'class가 table인 요소의 자식 및 자손인 tr 태그'의 자식인 td 태그에 적용되는 코드 */
 .table tr>td{padding: 5px}  /* 상하좌우의 border 안쪽 여백을 5px로 설정하였음. */
 
 /* 'class가 table인 요소의 자식 및 자손인 tr 태그' 중 짝수 번째 자식인 요소들에 적용되는 코드 */
