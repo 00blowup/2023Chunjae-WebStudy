@@ -1,0 +1,49 @@
+/* flex 실습을 위한 css */
+.flex-container {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    background-color: #c4c4c4;
+    border: 1px solid black;
+    display: flex;
+/*    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; 다양한 direction 사용 가능 (기본은 row)*/
+}
+
+/* flex-wrap 살펴보기 */
+.one {
+    flex-wrap: nowrap;  /* 기본값 */
+}
+.two {
+    flex-wrap: wrap;
+}
+.three {
+    flex-wrap: wrap-reverse;
+}
+
+/* align 살펴보기 */
+/* align-items와 align-content는 컨테이너 내부 요소들이 wrap 때문에 두 줄 이상이 되었을 때 차이점이 나타난다. */
+.four {
+    flex-wrap: wrap;
+    align-items: center;
+}
+.five {
+    flex-wrap: wrap;
+    align-content: center;
+}
+.six div {
+    align-self: center; /* 자신을 정렬하는 속성이므로 컨테이너가 아닌 내부 요소에 적용한다. */
+}
+
+.flex-item {
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #ff5252;
+}
+
+.flex-item:nth-child(2n) {
+    background-color: #bf5e5e;
+}
