@@ -1,0 +1,29 @@
+div {
+    border: 1px black solid;
+}
+
+#container {
+    display: flex;
+    width: 700px;
+    background-color: aliceblue;
+}
+
+#container div:nth-child(1) {
+    width: 200px;
+    background-color: antiquewhite;
+}
+
+#container div:nth-child(2) {
+    width: 300px;
+    background-color: aqua;
+}
+
+#container div:nth-child(3) {
+    width: 100px;
+    background-color:darkgreen;
+}
+
+#container div:nth-child(4) {
+    width: 100px;
+    background-color: chocolate;
+}
